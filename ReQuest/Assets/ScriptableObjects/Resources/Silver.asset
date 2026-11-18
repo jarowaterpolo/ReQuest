@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Silver
   m_EditorClassIdentifier: Assembly-CSharp::Resource
   initialValue: 0
+  conversionValue: 20

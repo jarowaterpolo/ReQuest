@@ -2,6 +2,16 @@ using UnityEngine;
 
 public class Calculator
 {
+    public static int GCD(int a, int b)
+    {
+        while (b != 0)
+        {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return Mathf.Max(1, a);
+    }
     public static string RollRarity()
     {
         int legendaryChance = 2; int epicChance = 5; int rareChance = 10; int uncommonChance = 25;

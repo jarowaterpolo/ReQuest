@@ -9,7 +9,7 @@ public class ResourcePresenter : MonoBehaviour
 
     private void Start()
     {
-        UpdateText(0);
+        UpdateText(resource.value);
     }
     void UpdateText(int value)
     {

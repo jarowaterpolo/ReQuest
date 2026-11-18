@@ -10,8 +10,12 @@ public class QuestFunction : MonoBehaviour
 
     public void ActivateQuest()
     {
-        StartCoroutine(RunQuest());
-        Debug.Log("start quest");
+        if (adventurers.value > 0)
+        {
+            adventurers.value--;
+            StartCoroutine(RunQuest());
+            Debug.Log("start quest");
+        }
     }
 
     private IEnumerator RunQuest()

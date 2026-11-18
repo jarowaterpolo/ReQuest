@@ -22,6 +22,10 @@ public class Resource : ScriptableObject
         get => _value;
     }
 
+    [SerializeField]
+    private int conversionValue;
+    public int ConversionValue => conversionValue;
+
     private void OnEnable()
     {
         value = initialValue;
