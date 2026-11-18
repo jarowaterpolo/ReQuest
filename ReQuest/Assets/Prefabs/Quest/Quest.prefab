@@ -437,7 +437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 429bccda02590bb41bfcc49e9c375885, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestPresenter
-  quest: {fileID: 11400000, guid: d8669710ca72e1f4ca9f7491329e8065, type: 2}
+  quest: {fileID: 11400000, guid: 4416df9d7b61912438482978d65b7c2c, type: 2}
   nameText: {fileID: 7413957560972265524}
   dieChanceText: {fileID: 3262179611729067461}
   rewardText: {fileID: 6689223187747742319}
@@ -1141,10 +1141,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 44.75
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
