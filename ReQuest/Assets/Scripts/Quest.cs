@@ -27,8 +27,8 @@ public class Quest : ScriptableObject
             {
                 var randomNum = Random.Range(0, pile.rewards.Length);
                 pile.rewards[randomNum].resource.value += pile.rewards[randomNum].amount;
-                var resourceStr = pile.rewards[randomNum].resource.ToString().Replace(" (Resource)", "");
-                Debug.Log($"you got {pile.rewards[randomNum].amount} {resourceStr}");
+                //var resourceStr = pile.rewards[randomNum].resource.ToString().Replace(" (Resource)", "");
+                //Debug.Log($"you got {pile.rewards[randomNum].amount} {resourceStr}");
             }
         }
     }

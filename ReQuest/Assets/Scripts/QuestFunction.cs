@@ -14,7 +14,7 @@ public class QuestFunction : MonoBehaviour
         {
             adventurers.value--;
             StartCoroutine(RunQuest());
-            Debug.Log("start quest");
+            //Debug.Log("start quest");
         }
     }
 
@@ -29,6 +29,6 @@ public class QuestFunction : MonoBehaviour
         {
             adventurers.value++;
         }
-        Debug.Log("quest done");
+        //Debug.Log("quest done");
     }
 }

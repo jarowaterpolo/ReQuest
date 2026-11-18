@@ -33,12 +33,12 @@ public class ResourceConverter : MonoBehaviour
         int cost = _conversionRate.x / divisor;
         int result = _conversionRate.y / divisor;
 
-        Debug.Log($"tried to convert {startResource.name} to {targetResource.name} \n" +
-            $"their divisor = {divisor}, cost: {cost}, result: {result} \n" +
-            $"available for conversion = {_amountToConvert} \n" +
-            $"{_amountToConvert} >= {cost} == {_amountToConvert>=cost} \n");
+        //Debug.Log($"tried to convert {startResource.name} to {targetResource.name} \n" +
+        //    $"their divisor = {divisor}, cost: {cost}, result: {result} \n" +
+        //    $"available for conversion = {_amountToConvert} \n" +
+        //    $"{_amountToConvert} >= {cost} == {_amountToConvert>=cost} \n");
         
-        if (_amountToConvert >= cost) 
+        if (_amountToConvert >= cost && _amountToConvert <= startResource.value) 
         { 
             int amountOfConversions = _amountToConvert / cost;
             int totalCost = amountOfConversions * cost;
