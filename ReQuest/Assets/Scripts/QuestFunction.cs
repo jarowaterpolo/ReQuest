@@ -14,14 +14,13 @@ public class QuestFunction : MonoBehaviour
         {
             adventurers.value--;
             StartCoroutine(RunQuest());
-            Debug.Log("start quest");
+            //Debug.Log("start quest");
         }
     }
 
     private IEnumerator RunQuest()
     {
-        quests.GetReward();
-
+        Debug.Log($"an adventurer started the {quests.QuestName} and will be busy with it for {quests.QuestDuration} seconds");
         yield return new WaitForSeconds(quests.QuestDuration);
 
         var randomNum = Random.Range(0, 100);
@@ -29,6 +28,7 @@ public class QuestFunction : MonoBehaviour
         {
             adventurers.value++;
         }
-        Debug.Log("quest done");
+        quests.GetReward();
+        //Debug.Log("quest done");
     }
 }

@@ -28,6 +28,11 @@ public class Resource : ScriptableObject
 
     private void OnEnable()
     {
+        ResetValue();
+    }
+
+    public void ResetValue()
+    {
         value = initialValue;
     }
 }

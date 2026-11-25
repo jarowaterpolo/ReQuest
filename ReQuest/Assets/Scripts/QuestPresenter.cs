@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class QuestPresenter : MonoBehaviour
 {
@@ -19,11 +20,17 @@ public class QuestPresenter : MonoBehaviour
         string rewards = "";
         foreach (var resourcePile in quest.ResourceRewardPiles)
         {
+            //rewards += $"{resourcePile.name}: \n";
             foreach (var reward in resourcePile.rewards)
             {
                 var resourceStr = reward.resource.ToString().Replace(" (Resource)", "");
-                rewards += $"{resourceStr} x{reward.amount} \n";
+                rewards += $"{resourceStr} x{reward.amount}, ";
             }
+
+            //Debug.Log($"reward text = {rewards}");
+            rewards = rewards.Remove(rewards.Length - 2, 2);
+            //Debug.Log($"reward after remove text = {rewards}");
+            rewards += "\n";
         }
         rewardText.text = rewards;
     }

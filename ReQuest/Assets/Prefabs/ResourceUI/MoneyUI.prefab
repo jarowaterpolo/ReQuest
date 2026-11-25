@@ -46,7 +46,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 494331355676663150, guid: 1f3f89d252f66bf4581d8ca6bdd36555, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 494331355676663150, guid: 1f3f89d252f66bf4581d8ca6bdd36555, type: 3}
       propertyPath: m_LocalPosition.x
@@ -82,7 +82,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 494331355676663150, guid: 1f3f89d252f66bf4581d8ca6bdd36555, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -50
+      value: -75
       objectReference: {fileID: 0}
     - target: {fileID: 494331355676663150, guid: 1f3f89d252f66bf4581d8ca6bdd36555, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -139,6 +139,14 @@ PrefabInstance:
     - target: {fileID: 5615468169725534989, guid: 1f3f89d252f66bf4581d8ca6bdd36555, type: 3}
       propertyPath: m_Name
       value: MoneyUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 5682864817532994703, guid: 1f3f89d252f66bf4581d8ca6bdd36555, type: 3}
+      propertyPath: m_text
+      value: HIRE(ALL)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6115552400830420329, guid: 1f3f89d252f66bf4581d8ca6bdd36555, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6816948946615618660, guid: 1f3f89d252f66bf4581d8ca6bdd36555, type: 3}
       propertyPath: m_Color.b

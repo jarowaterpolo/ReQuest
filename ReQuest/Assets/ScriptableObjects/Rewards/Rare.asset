@@ -13,5 +13,9 @@ MonoBehaviour:
   m_Name: Rare
   m_EditorClassIdentifier: Assembly-CSharp::ResourceRewardPile
   rewards:
+  - resource: {fileID: 11400000, guid: 50dbf5b8a05c86e4d9215947e6629666, type: 2}
+    amount: 4
   - resource: {fileID: 11400000, guid: 80eac4c154ce7a8498f5838f3f4a42b4, type: 2}
+    amount: 2
+  - resource: {fileID: 11400000, guid: e10f01f01dfcd4e42a26d14c88a7e5c4, type: 2}
     amount: 1

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Adventurers
   m_EditorClassIdentifier: Assembly-CSharp::Resource
   initialValue: 1
-  conversionValue: 10
+  conversionValue: 100

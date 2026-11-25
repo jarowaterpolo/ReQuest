@@ -108,6 +108,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AdventurerUI
       objectReference: {fileID: 0}
+    - target: {fileID: 6115552400830420329, guid: 1f3f89d252f66bf4581d8ca6bdd36555, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6816948946615618660, guid: 1f3f89d252f66bf4581d8ca6bdd36555, type: 3}
       propertyPath: m_Color.b
       value: 1

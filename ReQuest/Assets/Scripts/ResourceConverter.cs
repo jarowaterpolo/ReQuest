@@ -33,14 +33,29 @@ public class ResourceConverter : MonoBehaviour
         int cost = _conversionRate.x / divisor;
         int result = _conversionRate.y / divisor;
 
-        Debug.Log($"tried to convert {startResource.name} to {targetResource.name} \n" +
-            $"their divisor = {divisor}, cost: {cost}, result: {result} \n" +
-            $"available for conversion = {_amountToConvert} \n" +
-            $"{_amountToConvert} >= {cost} == {_amountToConvert>=cost} \n");
+        //Debug.Log($"tried to convert {startResource.name} to {targetResource.name} \n" +
+        //    $"their divisor = {divisor}, cost: {cost}, result: {result} \n" +
+        //    $"available for conversion = {_amountToConvert} \n" +
+        //    $"{_amountToConvert} >= {cost} == {_amountToConvert>=cost} \n");
         
-        if (_amountToConvert >= cost) 
+        if (_amountToConvert >= cost && _amountToConvert <= startResource.value) 
         { 
             int amountOfConversions = _amountToConvert / cost;
+            int totalCost = amountOfConversions * cost;
+            int totalResult = amountOfConversions * result;
+            startResource.value -= totalCost;
+            targetResource.value += totalResult;
+        }
+    }
+    public void ConvertAll()
+    {
+        int divisor = Calculator.GCD(_conversionRate.x, _conversionRate.y);
+        int cost = _conversionRate.x / divisor;
+        int result = _conversionRate.y / divisor;
+
+        if (startResource.value >= cost)
+        {
+            int amountOfConversions = startResource.value / cost;
             int totalCost = amountOfConversions * cost;
             int totalResult = amountOfConversions * result;
             startResource.value -= totalCost;

@@ -12,10 +12,8 @@ public class Calculator
         }
         return Mathf.Max(1, a);
     }
-    public static string RollRarity()
+    public static string RollRarity(int legendaryChance = 2, int epicChance = 5, int rareChance = 10, int uncommonChance = 25)
     {
-        int legendaryChance = 2; int epicChance = 5; int rareChance = 10; int uncommonChance = 25;
-
         var randomNum = Random.Range(0, 100);
 
         if (randomNum < legendaryChance)
