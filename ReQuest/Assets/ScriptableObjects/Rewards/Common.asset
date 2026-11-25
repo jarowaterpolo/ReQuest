@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ResourceRewardPile
   rewards:
   - resource: {fileID: 11400000, guid: d3e491302c41f6d4c9f9c4fe8893c487, type: 2}
+    amount: 2
+  - resource: {fileID: 11400000, guid: 50dbf5b8a05c86e4d9215947e6629666, type: 2}
     amount: 1

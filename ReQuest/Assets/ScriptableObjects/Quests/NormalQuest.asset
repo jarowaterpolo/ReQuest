@@ -14,10 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Quest
   questName: Dungeon quest 1
   resourceRewardPiles:
-  - {fileID: 11400000, guid: 67e28f537475b6a4c9ef2c0daf224efd, type: 2}
   - {fileID: 11400000, guid: 99104961dbd71404a9dd05e3408148a1, type: 2}
   - {fileID: 11400000, guid: ed70a8e9b36ecda4da7ccc6a45acc349, type: 2}
   - {fileID: 11400000, guid: 6a541e7622f9d544ab73b551e6dbe724, type: 2}
-  - {fileID: 11400000, guid: 5a2de5cb7c57ef045bb03b0cede8d169, type: 2}
   dieChance: 50
-  questDuration: 10
+  questDuration: 1
+  rarityChances:
+    legendaryChance: 0
+    epicChance: 10
+    rareChance: 25
+    uncommonChance: 100

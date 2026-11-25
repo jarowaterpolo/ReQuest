@@ -20,8 +20,7 @@ public class QuestFunction : MonoBehaviour
 
     private IEnumerator RunQuest()
     {
-        quests.GetReward();
-
+        Debug.Log($"an adventurer started the {quests.QuestName} and will be busy with it for {quests.QuestDuration} seconds");
         yield return new WaitForSeconds(quests.QuestDuration);
 
         var randomNum = Random.Range(0, 100);
@@ -29,6 +28,7 @@ public class QuestFunction : MonoBehaviour
         {
             adventurers.value++;
         }
+        quests.GetReward();
         //Debug.Log("quest done");
     }
 }

@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: BaseQuest
   m_EditorClassIdentifier: Assembly-CSharp::Quest
   questName: dummy base quest
-  resourceRewardPiles: []
+  resourceRewardPiles:
+  - {fileID: 11400000, guid: 67e28f537475b6a4c9ef2c0daf224efd, type: 2}
   dieChance: 0
-  questDuration: 10
+  questDuration: 1
+  rarityChances:
+    legendaryChance: 0
+    epicChance: 0
+    rareChance: 0
+    uncommonChance: 0

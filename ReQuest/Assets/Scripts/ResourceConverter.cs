@@ -47,6 +47,21 @@ public class ResourceConverter : MonoBehaviour
             targetResource.value += totalResult;
         }
     }
+    public void ConvertAll()
+    {
+        int divisor = Calculator.GCD(_conversionRate.x, _conversionRate.y);
+        int cost = _conversionRate.x / divisor;
+        int result = _conversionRate.y / divisor;
+
+        if (startResource.value >= cost)
+        {
+            int amountOfConversions = startResource.value / cost;
+            int totalCost = amountOfConversions * cost;
+            int totalResult = amountOfConversions * result;
+            startResource.value -= totalCost;
+            targetResource.value += totalResult;
+        }
+    }
     public void SetText()
     {
         conversionText.text = $"{_conversionRate.x}/{_conversionRate.y}";

@@ -13,5 +13,19 @@ MonoBehaviour:
   m_Name: Legendary
   m_EditorClassIdentifier: Assembly-CSharp::ResourceRewardPile
   rewards:
+  - resource: {fileID: 11400000, guid: e10f01f01dfcd4e42a26d14c88a7e5c4, type: 2}
+    amount: 1
+  - resource: {fileID: 11400000, guid: e10f01f01dfcd4e42a26d14c88a7e5c4, type: 2}
+    amount: 1
   - resource: {fileID: 11400000, guid: 9479d076186add340b77236026c6c713, type: 2}
     amount: 1
+  - resource: {fileID: 11400000, guid: e10f01f01dfcd4e42a26d14c88a7e5c4, type: 2}
+    amount: 2
+  - resource: {fileID: 11400000, guid: e10f01f01dfcd4e42a26d14c88a7e5c4, type: 2}
+    amount: 2
+  - resource: {fileID: 11400000, guid: e10f01f01dfcd4e42a26d14c88a7e5c4, type: 2}
+    amount: 3
+  - resource: {fileID: 11400000, guid: e10f01f01dfcd4e42a26d14c88a7e5c4, type: 2}
+    amount: 3
+  - resource: {fileID: 11400000, guid: 9479d076186add340b77236026c6c713, type: 2}
+    amount: 5
